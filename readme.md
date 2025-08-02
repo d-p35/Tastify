@@ -1,27 +1,33 @@
-# Expo Supabase Starter
+# Tastify (React Native/Expo + Supabase + Gemini)
 
-![social-preview-dark](https://github.com/user-attachments/assets/9697a7da-10aa-4661-bb76-b5bc0dd611f0)
+A mobile app that lets users save and organize recipes directly from TikTok and Instagram.
+Users can share videos straight to the app, which automatically converts them into structured
+recipes with ingredients, steps, and macros using Google's Gemini AI. Recipes can be grouped
+into collaborative boards and shopping lists can be generated instantly.
 
-## Introduction
+---
 
-This repository serves as a comprehensive starter project for developing React Native and Expo applications with Supabase as the backend. It integrates various technologies such as Expo Router for navigation, Tailwind CSS for styling, React-Hook-Form for form handling, Zod for schema validation, and TypeScript for type safety. By leveraging these powerful tools, this starter template provides a robust foundation for building modern, scalable, and efficient mobile applications.
+## Features
 
-#### Disclaimer
+- **iOS Share Extension** – Share TikTok or Instagram links directly into the app.
+- **AI Recipe Parsing** – Converts video content into a clean recipe format using Gemini.
+- **Supabase Backend** – Secure authentication, recipe storage, and collaborative boards.
+- **Chakra UI (React Native)** – Modern, clean interface with theming support.
+- **Shopping Lists** – Combine ingredients from multiple recipes.
 
-This is not supposed to be a template, boilerplate or a framework. It is an opinionated guide that shows how to do some things in a certain way. You are not forced to do everything exactly as it is shown here, decide what works best for you and your team and stay consistent with your style.
+---
 
-## Table of Contents
+## Tech Stack
 
-- [💻 Application Overview](docs/application-overview.md)
-- [⚙️ Project Configuration](docs/project-configuration.md)
-- [🗄️ Project Structure](docs/project-structure.md)
-- [🧱 Components And Styling](docs/components-and-styling.md)
-- [🗃️ State Management](docs/state-management.md)
+- **Frontend**
+  - [Expo (React Native)](https://expo.dev/)
+  - [Chakra UI React Native](https://github.com/chakra-ui/chakra-ui-react-native)
+  - [React Navigation](https://reactnavigation.org/)
+  - [React Hook Form](https://react-hook-form.com/)
+- **Backend**
+  - [Supabase](https://supabase.com/) (Auth + Database + Realtime)
+  - [Vercel Serverless Functions](https://vercel.com/) (for Gemini integration)
+- **AI**
+  - [Google Gemini API](https://ai.google.dev/)
 
-## Contributing
-
-Contributions to this starter project are highly encouraged and welcome! If you have any suggestions, bug reports, or feature requests, please feel free to create an issue or submit a pull request. Let's work together to enhance the developer experience and make it easier for everyone to build exceptional Expo applications with Supabase.
-
-## License
-
-This repository is licensed under the MIT License. You are granted the freedom to use, modify, and distribute the code for personal or commercial purposes. For more details, please refer to the [LICENSE](https://github.com/FlemingVincent/supabase-starter/blob/main/LICENSE) file.
+---
